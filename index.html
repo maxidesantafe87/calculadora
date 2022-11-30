@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto de calculadora</title>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/calculadora.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Proyecto de calculadora</h1>
+    <h2 class="lead">Calculadora Grupo N° nose, Soy Henrry</h2>
+
+    
+    <div class="row" id="cajon1">
+        <div id="content" class="col-lg-12">
+            <div class="calculadora">
+                <div class="pantalla" id="pantalla"></div>
+                <ul id="botones" class="botones">
+                    <li><a href="#" data-key="clear">C</a></li>
+                    <li><a href="#" data-key="-">-</a></li>
+                    <li><a href="#" data-key="/">/</a></li>
+                    <li><a href="#" data-key="*">x</a></li>    
+                    <li><a href="#" data-key="7">7</a></li>
+                    <li><a href="#" data-key="8">8</a></li>
+                    <li><a href="#" data-key="9">9</a></li>
+                    <li><a href="#" data-key="-">-</a></li>
+                    <li><a href="#" data-key="4">4</a></li>
+                    <li><a href="#" data-key="5">5</a></li>
+                    <li><a href="#" data-key="6">6</a></li>
+                    <li><a href="#" data-key="+">+</a></li>
+                    <li><a href="#" data-key="1">1</a></li>
+                    <li><a href="#" data-key="2">2</a></li>
+                    <li><a href="#" data-key="3">3</a></li>
+                    <li><a href="#" data-key="igual" class="igual tall">=</a></li>
+                    <li><a href="#" data-key="0" class="wide shift">0</a></li>
+                    <li><a href="#" data-key="." class="shift">.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+<div class="row" id="cajon2">
+    <div id="content" class="col-lg-12">
+        <div class="calculadora2">
+            <div class="pantalla2" id="pantalla2"></div>
+            <ul id="botones2" class="botones2">
+                <li><a href="#" data-key="clear">C</a></li>
+                <li><a href="#" id="abrirModal" data-key="%">%</a></li>
+                <li><a href="#" data-key="/">/</a></li>
+                <li><a href="#" data-key="*">x</a></li>    
+                <li><a href="#" data-key="7">7</a></li>
+                <li><a href="#" data-key="8">8</a></li>
+                <li><a href="#" data-key="9">9</a></li>
+                <li><a href="#" data-key="-">-</a></li>
+                <li><a href="#" data-key="4">4</a></li>
+                <li><a href="#" data-key="5">5</a></li>
+                <li><a href="#" data-key="6">6</a></li>
+                <li><a href="#" data-key="+">+</a></li>
+                <li><a href="#" data-key="1">1</a></li>
+                <li><a href="#" data-key="2">2</a></li>
+                <li><a href="#" data-key="3">3</a></li>
+                <li><a href="#" data-key="igual" class="igual tall">=</a></li>
+                <li><a href="#" data-key="0" class="wide shift">0</a></li>
+                <li><a href="#" data-key="." class="shift">.</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- Ventana modal, por defecto no visiblel -->
+  <div id="ventanaModal" class="modal">
+    <div class="contenido-modal">
+        <span class="cerrar">&times;</span>
+          
+            <div id="content" class="col-lg-12">
+                <div class="calculadora3">
+                    <div class="pantalla3" id="pantalla3"></div>
+                        
+
+            <form name="form" action="" method="get">
+              <a class="letras"> <b>El </b></a> <input class="input" type="text" name="porcentaje" id="porcentaje" class="input"><a class="letras"><b> % de:</b> </a>
+            <input type="text" name="total" id="total" class="input"><br><br>
+            
+            </form>
+            <button onclick="calculaPorcentajes()" class="botonIgual">Calcular</button>
+
+    </div>
+  </div>
+
+</div>
+<footer class="footer bg-dark">
+    <div class="container">
+        <span class="text-muted"><a>Maxi G Zarate &copy; 2022 </a></span>
+    </div>
+</footer>
+<script src="js/calculadora.js"></script>
+</body>
+</html>
