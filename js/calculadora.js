@@ -57,7 +57,7 @@ for (const button2 of botones2) {
 
 var modal = document.getElementById("ventanaModal");
 
-// Botón que abre el modal
+// Botón que abre el modal  
 var boton = document.getElementById("abrirModal");
 
 // Hace referencia al elemento <span> que tiene la X que cierra la ventana
